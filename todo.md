@@ -17,3 +17,7 @@ Sections
 
 - Animations (edit the one from Framer Motion)
 - Set up a layout file to wrap components in for default styles like padding and margin.
+
+- Work out why image isn't showing up on deployed site [here](https://right-to-city.netlify.app/)
+
+- Write down steps better in Readme, and make sure they are in order. Can make things up if needed to pad it out.
