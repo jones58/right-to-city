@@ -12,8 +12,8 @@ export default function Animation({
         animate="pageAnimate"
         variants={{
           pageInitial: {
-            y: '-100vh',
-            opacity: 0,
+            y: '100vh',
+            opacity: 0.5,
             scale: 1,
           },
           pageAnimate: {
@@ -21,7 +21,8 @@ export default function Animation({
             opacity: 1,
             scale: 1,
             transition: {
-              duration: 0.6,
+              type: 'tween',
+              duration: 0.4,
               ease: 'easeInOut',
               when: 'beforeChildren',
             },
