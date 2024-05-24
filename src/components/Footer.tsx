@@ -1,4 +1,3 @@
-
 export default function Footer() {
   return (
     <footer className="flex w-full flex-col justify-between bg-black p-10 text-2xl text-white lg:flex-row  lg:p-20">
