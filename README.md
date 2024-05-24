@@ -7,7 +7,7 @@
 - Started wireframing in Figma
 - Bootstrapped with Vite, React and Tailwind CSS
 - I noticed my tailwind class sorting plugin for prettier wasn't working, so I loooked online and found a tutorial that reccommending using .prettierrc.json instead of.prettierrc, which fixed it.
-- Set up animations with Framer Motion
+- Set up animations with Framer Motion and an Animation file to wrap components in.
 
 ## How to run it:
 
