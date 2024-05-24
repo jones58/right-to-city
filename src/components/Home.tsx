@@ -3,7 +3,7 @@ export default function Home() {
     <div>
       <div className="grid h-screen grid-rows-4 " id="home">
         <div className="row-span-3 lg:grid lg:grid-cols-5">
-          <div className="relative z-20 mt-20 p-10 pt-20 text-5xl font-bold text-white lg:col-span-3 lg:p-20 lg:text-8xl">
+          <div className="relative z-20 mt-20 p-10 pt-20 text-5xl font-bold text-white lg:col-span-3 lg:p-20 lg:text-7xl">
             <h1>
               Our Right to the City: <br /> A Festival of Urban Liberation
             </h1>

@@ -11,8 +11,6 @@ Sections
 - Location (embedded google map)
 - Get involved (web form — possibly link to airtable)
 
-- Figma template
-
 - Design colours etc. when artwork for leaflets and social media done.
 
 - Animations (edit the one from Framer Motion)
