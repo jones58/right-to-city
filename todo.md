@@ -15,6 +15,5 @@ Sections
 
 - Design colours etc. when artwork for leaflets and social media done.
 
-- Animations
-
-Done:
+- Animations (edit the one from Framer Motion)
+- Set up a layout file to wrap components in for default styles like padding and margin.

@@ -1,10 +1,10 @@
 import './App.css';
+import Home from './components/Home.tsx';
 
 function App() {
   return (
     <>
-      <div className="fixed flex flex flex grid text-red-500 text-red-500"></div>
-      <div>Hello</div>
+      <Home />
     </>
   );
 }
