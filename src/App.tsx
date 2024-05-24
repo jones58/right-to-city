@@ -4,6 +4,7 @@ import About from './components/About';
 import WhatsOn from './components/WhatsOn';
 import Location from './components/Location';
 import GetInvolved from './components/GetInvolved';
+import Footer from './components/Footer';
 import Animation from './Animation.tsx';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <WhatsOn />
       <Location />
       <GetInvolved />
+      <Footer />
     </Animation>
   );
 }
