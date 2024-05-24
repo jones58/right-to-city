@@ -1,2 +1,3 @@
 # right-to-city
- Website for Right to the City Festival
+
+Website for Right to the City Festival
