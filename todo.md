@@ -1,8 +1,6 @@
 UL website
 
-One page site - wordpress headless cms
-some ideas:
-http://festival.weareplanc.org/
+One page site
 
 Sections
 
@@ -15,13 +13,8 @@ Sections
 
 - Figma template
 
-- Design colours etc.
+- Design colours etc. when artwork for leaflets and social media done.
 
-  - We are still working on the artwork for the leaflets / social media but these are the basic areas of the site.
-
-- use tailwindcss animate plugin
+- Animations
 
 Done:
-
-- Bootstrapped with Vite, React and Tailwind CSS
-- I noticed my tailwind class sorting plugin for prettier wasn't working, so I loooked online and found a tutorial that reccommending using .prettierrc.json instead of.prettierrc, which fixed it.
