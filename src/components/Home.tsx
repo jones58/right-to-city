@@ -11,8 +11,8 @@ export default function Home() {
           </h1>
         </div>
       </div>
-      <div className="z-20 row-span-2 flex flex-col justify-start bg-black p-10 lg:row-span-1 lg:grid lg:grid-cols-5 lg:items-center lg:p-20">
-        <div className="text-3xl text-white lg:col-span-3  lg:text-4xl">
+      <nav className="z-20 row-span-2 flex flex-col justify-start bg-black p-10 lg:row-span-1 lg:grid lg:grid-cols-5 lg:items-center lg:p-20">
+        <div className="pb-10 text-3xl text-white lg:col-span-3 lg:pb-0 lg:text-4xl">
           <a href="#getInvolved" className="hover:opacity-70">
             Get Involved
           </a>
@@ -28,7 +28,7 @@ export default function Home() {
             Location
           </a>
         </div>
-      </div>
+      </nav>
       <div className="absolute inset-0 z-0 h-screen bg-[url('images/city-bg.jpg')] bg-cover bg-center brightness-50"></div>
     </div>
   );
