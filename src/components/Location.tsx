@@ -1,13 +1,11 @@
 export default function Location() {
   return (
     <div
-      className="min-h-screen p-4 text-lg lg:grid lg:grid-cols-5 lg:p-20"
+      className="min-h-screen p-10 text-lg lg:grid lg:grid-cols-5 lg:p-20"
       id="location"
     >
-      <div className="prose py-5 lg:col-span-3 lg:py-10 lg:pr-20 lg:text-2xl">
-        <h1 className="py-2 text-3xl font-bold lg:py-5 lg:text-4xl">
-          Location
-        </h1>
+      <div className="prose py-5 lg:col-span-3 lg:py-0 lg:pr-20 lg:text-2xl">
+        <h1 className="py-2 text-3xl font-bold lg:text-4xl">Location</h1>
         The event will be held at the Barbican. Most of our accommodation
         is in tents, but we do have a number of indoor rooms with beds for
         families or those who aren't able to camp. This includes some
