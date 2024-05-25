@@ -17,7 +17,7 @@ export default function Home() {
             Get Involved
           </a>
         </div>
-        <div className="flex flex-col justify-start space-y-5 text-right text-3xl text-white lg:col-span-2 lg:flex-row lg:space-x-10 lg:space-y-0 lg:text-left lg:text-4xl">
+        <div className="flex flex-col justify-start space-y-5 text-right text-3xl text-white lg:col-span-2 lg:flex-row lg:justify-between lg:space-x-10 lg:space-y-0 lg:text-left lg:text-4xl">
           <a href="#about" className="hover:opacity-70">
             About
           </a>
