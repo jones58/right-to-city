@@ -10,6 +10,7 @@
 - Set up animations with Framer Motion and an Animation file to wrap components in.
 - Set up the basic structure of the site. I used the Figma wireframe as a guide
 - Added embedded google map to the site with an iframe.
+- I spent a lot of time getting the frontpage (technically top page) of the site looking right on mobile and desktop. I liked using Tailwind to quickly iterate on the css and used border-white border-2 to make it easier to adjust padding and margin values.
 
 ## How to run it:
 
