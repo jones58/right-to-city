@@ -7,7 +7,7 @@ export default function Home() {
       <div className="row-span-3 lg:row-span-4 lg:grid lg:grid-cols-5">
         <div className="relative z-20 mt-20 p-10 pt-20 text-5xl font-bold text-white lg:col-span-3 lg:p-20 lg:pt-40 lg:text-7xl">
           <h1>
-            Our Right to the City: <br /> A Festival of Urban Liberation
+            Our Right to the City: <br /> Festival of Urban Liberation
           </h1>
         </div>
       </div>
@@ -29,7 +29,7 @@ export default function Home() {
           </a>
         </div>
       </nav>
-      <div className="absolute inset-0 z-0 h-screen bg-[url('images/city-bg.jpg')] bg-cover bg-center brightness-50"></div>
+      <div className="absolute inset-0 z-0 h-screen bg-[url('public/images/city-bg.jpg')] bg-cover bg-center brightness-50"></div>
     </div>
   );
 }
