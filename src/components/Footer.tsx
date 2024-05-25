@@ -4,7 +4,7 @@ export default function Footer() {
       <p className="font-sans">
         Our Right to the City: A Festival of Urban Liberation
       </p>
-      <div className="py-10">
+      <div className="py-10 lg:py-0">
         <p>
           Site by{' '}
           <a
