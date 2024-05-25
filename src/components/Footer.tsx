@@ -11,7 +11,7 @@ export default function Footer() {
             href="https://www.jackkershaw.net"
             target="_blank"
             className="
-           decoration-wavy hover:underline"
+           hover:opacity-70 active:opacity-100"
             aria-label="link to Jack Kershaw's website"
           >
             Jack Kershaw.
@@ -22,7 +22,7 @@ export default function Footer() {
           <a
             href="https://github.com/jones58/right-to-city"
             target="_blank"
-            className="decoration-wavy hover:underline"
+            className="hover:opacity-70 active:opacity-100"
             aria-label="link to the Vital Signs Magazine GitHub repository"
           >
             Github.

@@ -9,20 +9,29 @@ export default function Home() {
             </h1>
             <a
               href="#getInvolved"
-              className="relative z-20 pt-20 text-3xl font-normal decoration-wavy hover:underline lg:col-span-2 lg:text-6xl"
+              className="relative z-20 mt-20 pt-20 text-3xl font-normal  hover:opacity-70 active:opacity-100 lg:col-span-2 lg:text-6xl"
             >
               Get Involved
             </a>
           </div>
         </div>
         <div className="z-20 row-span-1 flex flex-col justify-start bg-black p-10 text-right text-4xl text-white lg:row-span-2 lg:flex-row lg:justify-end lg:space-x-10 lg:space-y-0 lg:p-20 lg:text-4xl">
-          <a href="#about" className="decoration-wavy hover:underline">
+          <a
+            href="#about"
+            className="hover:opacity-70 active:opacity-100"
+          >
             About
           </a>
-          <a href="#whatsOn" className="decoration-wavy hover:underline">
+          <a
+            href="#whatsOn"
+            className="hover:opacity-70 active:opacity-100"
+          >
             What's On
           </a>
-          <a href="#location" className="decoration-wavy hover:underline">
+          <a
+            href="#location"
+            className="hover:opacity-70 active:opacity-100"
+          >
             Location
           </a>
         </div>
