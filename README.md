@@ -1,4 +1,4 @@
-# How I made this site:
+#How I made this site:
 
 - Made an Are.na folder of some sites I like:
   https://www.are.na/jack-kershaw/right-to-city
