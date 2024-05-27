@@ -13,6 +13,7 @@
 - Added about component.
 - Changed favicon to building using an SVG from Iconify.
 - Added a form component to the site.
+- Added some template event data in JSON (wrapped in a tsx file), made an event card component and added it to the what's on section using .map() to go through the data and create a new card for each. Using template data and sample images helped me to do the styling of these components.
 
 ## How to run it:
 
