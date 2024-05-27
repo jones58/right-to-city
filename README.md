@@ -12,6 +12,7 @@
 - Built out Location component using Google Maps embed and styled responsively.
 - Added about component.
 - Changed favicon to building using an SVG from Iconify.
+- Added a form component to the site.
 
 ## How to run it:
 
