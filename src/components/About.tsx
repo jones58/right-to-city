@@ -4,7 +4,7 @@ export default function About() {
       className="min-h-screen p-10 text-2xl lg:grid lg:grid-cols-5 lg:p-20 lg:text-4xl"
       id="about"
     >
-      <div className="lg:col-span-3 lg:pr-20">
+      <div className=" lg:col-span-3 lg:pr-20">
         <img src="/images/city-2.jpg" />
       </div>
       <div className="prose py-5 lg:col-span-2 lg:py-0 lg:pr-20 lg:text-2xl">
