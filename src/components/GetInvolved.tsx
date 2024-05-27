@@ -10,7 +10,9 @@ export default function GetInvolved() {
         <h1 className="text-3xl font-bold lg:text-4xl">Get Involved</h1>
         <Form />
       </div>
-      <div className="col-span-2">photo here</div>
+      <div className=" lg:col-span-2 lg:my-auto">
+        <img src="/images/city-bg.jpg" className="" />
+      </div>
     </div>
   );
 }
