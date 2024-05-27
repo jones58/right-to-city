@@ -1,3 +1,5 @@
+import Form from './Form';
+
 export default function GetInvolved() {
   return (
     <div
@@ -6,6 +8,7 @@ export default function GetInvolved() {
     >
       <div className="prose lg:col-span-3 lg:pr-20 lg:text-2xl">
         <h1 className="text-3xl font-bold lg:text-4xl">Get Involved</h1>
+        <Form />
       </div>
       <div className="col-span-2">photo here</div>
     </div>
