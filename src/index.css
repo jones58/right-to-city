@@ -6,22 +6,25 @@ body {
   @apply bg-background-default;
 }
 
-h1 {
-  @apply font-title;
-  @apply text-red-500;
+h1,
+h2,
+a {
+  @apply font-greve-wide;
+}
+p {
+  @apply font-body;
 }
 
 @font-face {
   font-family: 'greve';
   font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  src: url('/fonts/greve-variable.ttf') format('ttf');
+  font-weight: 800;
+  src: url('./fonts/greve-variable.ttf') format('truetype');
 }
 @font-face {
   font-family: 'klima';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf')
+  src: url('./fonts/klima/webfonts/klima-regular-web.ttf')
     format('truetype');
 }
