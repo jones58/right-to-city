@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div
-      className="min-h-screen p-10 text-2xl lg:grid lg:grid-cols-5 lg:p-20 lg:text-4xl"
+      className="min-h-screen p-5 text-2xl lg:grid lg:grid-cols-5 lg:p-20 lg:text-4xl"
       id="CallToAction"
     >
       <div className=" lg:col-span-3 lg:pr-20">
