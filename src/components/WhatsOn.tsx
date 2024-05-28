@@ -9,7 +9,7 @@ export default function WhatsOn() {
       <h1 className="py-2 text-3xl font-bold lg:py-5 lg:text-4xl">
         What's On
       </h1>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {events.map((event, index) => (
           <EventCard
             key={index}

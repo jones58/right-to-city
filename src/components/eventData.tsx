@@ -1,7 +1,6 @@
 export const events = [
   {
-    title:
-      'Getting out of this mess: emerging solutions to climate change',
+    title: 'Solutions to Climate Change',
     imageUrl: 'https://picsum.photos/200/300?random=1',
     date: '11th January 2022',
     time: '10-12PM',
