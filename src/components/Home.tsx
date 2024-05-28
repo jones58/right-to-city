@@ -11,28 +11,26 @@ export default function Home() {
           </h1>
         </div>
       </div>
-      <nav className="z-20 row-span-2 flex flex-col justify-start bg-black p-5 lg:row-span-1 lg:grid lg:grid-cols-5 lg:items-center lg:p-20">
+      <nav className="z-20 row-span-2 flex flex-col justify-start bg-black p-5 lg:row-span-1 lg:grid lg:grid-cols-5 lg:items-center xl:p-20">
         <a
           className="z-20 flex h-24 w-24 flex-col justify-center rounded-full bg-red-500 hover:opacity-70 lg:col-span-3 lg:h-40 lg:w-40"
-          href="#CallToAction"
+          href="#signUp"
         >
           <h1 className="text-center text-xl uppercase text-white lg:text-2xl">
-            Find
+            Get
             <br />
-            out
-            <br />
-            more
+            Involved
           </h1>
         </a>
         <div className="flex flex-col justify-start space-y-5 text-right text-3xl text-white lg:col-span-2 lg:flex-row lg:justify-between lg:space-x-10 lg:space-y-0 lg:text-left lg:text-4xl">
+          <a href="#about" className="hover:opacity-70">
+            About
+          </a>
           <a href="#whatsOn" className="hover:opacity-70">
             What's On
           </a>
           <a href="#location" className="hover:opacity-70">
             Getting Here
-          </a>
-          <a href="#signUp" className="hover:opacity-70">
-            Sign Up
           </a>
         </div>
       </nav>
