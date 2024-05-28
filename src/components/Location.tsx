@@ -1,7 +1,7 @@
 export default function Location() {
   return (
     <div
-      className="min-h-screen p-5 text-lg lg:grid lg:grid-cols-5 lg:p-20"
+      className=" p-5 text-lg lg:grid lg:grid-cols-5 lg:px-20 lg:pb-20"
       id="location"
     >
       <div className="py-5 lg:col-span-2 lg:py-0 lg:pr-20 lg:text-2xl">

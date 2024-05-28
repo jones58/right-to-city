@@ -3,10 +3,10 @@ import { events } from './eventData';
 export default function WhatsOn() {
   return (
     <div
-      className="min-h-screen p-5 text-2xl lg:p-20 lg:text-4xl"
+      className="min-h-screen p-5 text-2xl lg:px-20 lg:pb-20 lg:text-4xl"
       id="whatsOn"
     >
-      <h1 className="py-2 text-3xl font-bold lg:py-5 lg:text-4xl">
+      <h1 className="pb-5 text-3xl font-bold lg:pb-4 lg:text-4xl">
         What's On
       </h1>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
