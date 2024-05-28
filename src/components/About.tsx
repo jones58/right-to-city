@@ -2,16 +2,16 @@ export default function About() {
   return (
     <div
       className="min-h-screen p-5 text-2xl lg:grid lg:grid-cols-5 lg:p-20 lg:text-4xl"
-      id="CallToAction"
+      id="about"
     >
       <div className=" lg:col-span-3 lg:pr-20">
-        <img src="/images/city-2.jpg" />
+        <img src="/images/city-2.jpg" className="h-full object-cover" />
       </div>
       <div className=" py-5 lg:col-span-2 lg:py-0 lg:text-2xl">
-        <h1 className="text-title py-2 text-3xl font-bold lg:py-5 lg:text-4xl">
+        <h1 className="text-title py-10 text-3xl font-bold lg:py-5 lg:text-4xl">
           About the Festival
         </h1>
-        <p className="prose-xl">
+        <p className="prose lg:prose-xl">
           The Festival of Urban Liberation will be bringing together
           campaigns and communities of resistance and struggles from
           across London.
