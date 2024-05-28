@@ -1,14 +1,23 @@
+import { addDynamicIconSelectors } from '@iconify/tailwind';
+
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  theme: {
-    extend: {
-      fontFamily: {
-        title: ['Greve', 'sans-serif'],
-        body: ['Klima', 'sans-serif'],
+// eslint-disable-next-line no-undef
+export const content = ['./index.html', './src/**/*.{js,ts,jsx,tsx}'];
+export const theme = {
+  extend: {
+    colors: {
+      background: {
+        default: '#dccead',
       },
     },
+    fontFamily: {
+      title: ['var(--font-greve)', 'sans-serif'],
+      body: ['var(--font-klima)', 'sans-serif'],
+    },
   },
-  // eslint-disable-next-line no-undef
-  plugins: [require('@tailwindcss/typography')],
 };
+export const plugins = [
+  // eslint-disable-next-line no-undef
+  require('@tailwindcss/typography'),
+  addDynamicIconSelectors(),
+];

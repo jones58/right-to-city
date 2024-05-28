@@ -8,7 +8,7 @@ export default function About() {
         <img src="/images/city-2.jpg" />
       </div>
       <div className="prose py-5 lg:col-span-2 lg:py-0 lg:text-2xl">
-        <h1 className="py-2 text-3xl font-bold lg:py-5 lg:text-4xl">
+        <h1 className="text-title py-2 text-3xl font-bold lg:py-5 lg:text-4xl">
           About
         </h1>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat

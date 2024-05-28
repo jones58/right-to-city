@@ -14,6 +14,7 @@
 - Changed favicon to building using an SVG from Iconify.
 - Added a form component to the site.
 - Added some template event data in JSON (wrapped in a tsx file), made an event card component and added it to the what's on section using .map() to go through the data and create a new card for each. Using template data and sample images helped me to do the styling of these components.
+- Once I had the design file from the client, I was able to build out the fonts and colours I wanted from the site. The body font they suggested wasn't right (Greve) so I suggested using Klima instead.
 
 ## How to run it:
 

@@ -3,5 +3,25 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#dccead];
+  @apply bg-background-default;
+}
+
+h1 {
+  @apply font-title;
+  @apply text-red-500;
+}
+
+@font-face {
+  font-family: 'greve';
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  src: url('/fonts/greve-variable.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'klima';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf')
+    format('truetype');
 }
