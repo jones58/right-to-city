@@ -49,7 +49,7 @@ export default function GetInvolved() {
             value={formData.fname}
             onChange={handleChange}
             placeholder="First name"
-            className="border border-2 border-black px-4 py-2"
+            className="border border-2 border-black px-4 py-2 lg:px-2"
             required
           />
         </div>
@@ -66,7 +66,7 @@ export default function GetInvolved() {
             value={formData.lname}
             onChange={handleChange}
             placeholder="Last name"
-            className=" border border-2 border-black px-4 py-2 "
+            className=" border border-2 border-black px-4 py-2 lg:px-2 "
             required
           />
         </div>

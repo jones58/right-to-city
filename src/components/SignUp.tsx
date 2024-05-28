@@ -10,7 +10,7 @@ export default function SignUp() {
         <h1 className="pb-5 text-4xl">Sign Up</h1>
         <Form />
       </div>
-      <div className="pt-10 lg:col-span-2 lg:pt-0">
+      <div className="pt-10 lg:col-span-2 lg:my-auto lg:pt-0">
         <img src="/images/city-bg.jpg" className="" />
       </div>
     </div>

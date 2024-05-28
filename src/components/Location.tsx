@@ -24,6 +24,12 @@ export default function Location() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+      <div className="col-span-3 col-start-3">
+        <p className="prose-xl py-5">
+          - The easiest way to get there is via bicycle, tube or bus.{' '}
+          <br />- The nearest tube station is Abbey Wood (Elizabeth Line).
+        </p>
+      </div>
     </div>
   );
 }
