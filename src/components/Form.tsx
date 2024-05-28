@@ -33,11 +33,10 @@ export default function GetInvolved() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="font-body w-full space-y-5 bg-white p-5 lg:p-10 "
+      className="font-body max-w-xl space-y-5 bg-white "
     >
-      <div className="flex flex-col justify-between space-y-1 pb-2 lg:flex-row lg:space-y-0 lg:pb-0">
-        {' '}
-        <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between space-y-1 pb-2 lg:grid lg:w-full lg:grid-cols-4 lg:space-y-0 lg:pb-0">
+        <div className="flex flex-col lg:col-span-1">
           <label
             htmlFor="fname"
             className="mb-2 text-xl font-medium text-neutral-700 lg:mb-5"
@@ -54,7 +53,7 @@ export default function GetInvolved() {
             required
           />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:col-span-2 lg:col-start-3">
           <label
             htmlFor="lname"
             className="mb-2 text-xl font-medium text-neutral-700 lg:mb-5"
@@ -117,7 +116,7 @@ export default function GetInvolved() {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Send us a message"
+          placeholder="Include any relevant notes"
           className=" border border-2 border-black px-4 py-2 "
           rows={4}
           required

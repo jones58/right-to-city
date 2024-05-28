@@ -7,7 +7,7 @@ export default function SignUp() {
       id="signUp"
     >
       <div className="lg:col-span-3 lg:pr-20 lg:text-2xl">
-        <h1 className="text-4xl lg:pb-5">Sign Up</h1>
+        <h1 className="pb-5 text-4xl">Sign Up</h1>
         <Form />
       </div>
       <div className="pt-10 lg:col-span-2 lg:pt-0">
