@@ -16,6 +16,7 @@
 - Added some template event data in JSON (wrapped in a tsx file), made an event card component and added it to the what's on section using .map() to go through the data and create a new card for each. Using template data and sample images helped me to do the styling of these components.
 - Once I had the design file from the client, I was able to build out the fonts and colours I wanted from the site. The body font they suggested wasn't right (Greve) so I suggested using Klima instead.
 - This also gave me my first taste of using a variable font on a website (Greve). It was nice to have just one font file to work from, but a little trickier to set up. I used a custom utility in tailwind to get the widest font I could, setting it as .font-greve-wide, which sets the fontFamily to 'greve' and uses fontVariationSettings to adjust the weight and width.
+- I noticed the site wasn't taking up a lot of the available room on mobile, so I changed the padding from 10 to 5.
 
 ## How to run it:
 

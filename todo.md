@@ -1,3 +1,2 @@
 - Finish form — link to airtable
-- edit design and colours using PSD.
-- use iconify for icons.
+- edit design and colours using PSD. Add triangles and maybe more circles.
