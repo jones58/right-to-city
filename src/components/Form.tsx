@@ -20,21 +20,27 @@ export default function GetInvolved() {
   const handleSubmit = e => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    setFormData({ fname: '', lname: '', email: '', phone: '' });
+    setFormData({
+      fname: '',
+      lname: '',
+      email: '',
+      phone: '',
+      message: '',
+    });
     alert('Form submitted successfully!');
   };
 
   return (
     <form
       onSubmit={handleSubmit}
-      className="font-body w-full space-y-6 border bg-white p-8 "
+      className="font-body w-full space-y-5 bg-white p-5 lg:p-10 "
     >
-      <div className="flex flex-col justify-between space-y-6 lg:flex-row lg:space-y-0">
+      <div className="flex flex-col justify-between space-y-1 pb-2 lg:flex-row lg:space-y-0 lg:pb-0">
         {' '}
         <div className="flex flex-col justify-between">
           <label
             htmlFor="fname"
-            className="mb-5 text-xl font-medium text-neutral-700"
+            className="mb-2 text-xl font-medium text-neutral-700 lg:mb-5"
           >
             First Name
           </label>
@@ -44,14 +50,14 @@ export default function GetInvolved() {
             value={formData.fname}
             onChange={handleChange}
             placeholder="First name"
-            className="border px-4 py-2 "
+            className="border border-2 border-black px-4 py-2"
             required
           />
         </div>
         <div className="flex flex-col">
           <label
             htmlFor="lname"
-            className="mb-5 text-xl font-medium text-neutral-700"
+            className="mb-2 text-xl font-medium text-neutral-700 lg:mb-5"
           >
             Last Name
           </label>
@@ -61,7 +67,7 @@ export default function GetInvolved() {
             value={formData.lname}
             onChange={handleChange}
             placeholder="Last name"
-            className=" border px-4 py-2 "
+            className=" border border-2 border-black px-4 py-2 "
             required
           />
         </div>
@@ -69,7 +75,7 @@ export default function GetInvolved() {
       <div className="flex flex-col">
         <label
           htmlFor="email"
-          className="mb-5 text-xl font-medium text-neutral-700"
+          className="mb-2 text-xl font-medium text-neutral-700 lg:mb-5"
         >
           Email
         </label>
@@ -79,14 +85,14 @@ export default function GetInvolved() {
           value={formData.email}
           onChange={handleChange}
           placeholder="Email"
-          className="border px-4 py-2 "
+          className="border border-2 border-black px-4 py-2 "
           required
         />
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col pb-2 lg:pb-0">
         <label
           htmlFor="phone"
-          className="mb-5 text-xl font-medium text-neutral-700"
+          className="mb-2 text-xl font-medium text-neutral-700 lg:mb-5"
         >
           Phone
         </label>
@@ -96,14 +102,14 @@ export default function GetInvolved() {
           value={formData.phone}
           onChange={handleChange}
           placeholder="Phone"
-          className=" border px-4 py-2 "
+          className=" border border-2 border-black px-4 py-2 "
           required
         />
       </div>
       <div className="flex flex-col">
         <label
           htmlFor="phone"
-          className="mb-5 text-xl font-medium text-neutral-700"
+          className="mb-2 text-xl font-medium text-neutral-700 lg:mb-5"
         >
           Message
         </label>
@@ -112,7 +118,9 @@ export default function GetInvolved() {
           value={formData.message}
           onChange={handleChange}
           placeholder="Send us a message"
-          className=" border px-4 py-2 "
+          className=" border border-2 border-black px-4 py-2 "
+          rows={4}
+          required
         />
       </div>
       <div>
