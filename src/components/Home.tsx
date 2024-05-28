@@ -5,13 +5,13 @@ export default function Home() {
       className="relative grid h-screen grid-rows-5 lg:grid-rows-4"
     >
       <div className=" row-span-3 lg:row-span-4 lg:grid lg:grid-cols-5">
-        <div className="relative z-20 mt-20 p-10 pt-20 text-5xl font-bold uppercase text-white lg:col-span-3 lg:p-20 lg:pt-40 lg:text-7xl">
+        <div className="relative z-20 mt-20 p-5 pt-20 text-5xl font-bold uppercase text-white lg:col-span-3 lg:p-20 lg:pt-40 lg:text-7xl">
           <h1>
             Our Right to the City: <br /> Festival of Urban Liberation
           </h1>
         </div>
       </div>
-      <nav className="z-20 row-span-2 flex flex-col justify-start bg-black p-10 lg:row-span-1 lg:grid lg:grid-cols-5 lg:items-center lg:p-20">
+      <nav className="z-20 row-span-2 flex flex-col justify-start bg-black p-5 lg:row-span-1 lg:grid lg:grid-cols-5 lg:items-center lg:p-20">
         <a
           className="z-20 flex h-24 w-24 flex-col justify-center rounded-full bg-red-500 hover:opacity-70 lg:col-span-3 lg:h-40 lg:w-40"
           href="#CallToAction"
