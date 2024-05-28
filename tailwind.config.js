@@ -10,9 +10,6 @@ export const theme = {
         default: '#dccead',
       },
     },
-    fontFamily: {
-      body: ['klima', 'sans-serif'],
-    },
   },
 };
 export const plugins = [
@@ -24,6 +21,9 @@ export const plugins = [
       '.font-greve-wide': {
         fontFamily: 'greve',
         fontVariationSettings: "'wght' 600, 'wdth' 1000",
+      },
+      '.font-body': {
+        fontFamily: 'klima',
       },
     };
     addUtilities(newUtilities);
