@@ -20,7 +20,7 @@ export default function EventCard({
         src={imageUrl}
         alt={title}
       />
-      <div className="h-24 pt-5 text-2xl font-bold">{title}</div>
+      <h1 className="h-24 pt-5 text-2xl font-bold capitalize">{title}</h1>
       <div className="text-right">
         <p className="text-xl">{location}</p>
         <p className="text-xl">{time}</p>
