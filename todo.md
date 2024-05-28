@@ -1,6 +1,6 @@
+- fix Klima font not working
 - Finish form — link to airtable
 - best to have the static hero image and just a cta with read the call that will scroll down to the callout text. think thats easiest
-- fix tailwind typography plugin - don't think prose is working atm. Some of text paragraphs not looking right. See CSS for vital signs text for example.
-- Design colours etc. when artwork for leaflets and social media done.
-
-- use iconify for icons
+- might want to improve look of text. See CSS for vital signs text for example.
+- edit design and colours using PSD.
+- use iconify for icons.
