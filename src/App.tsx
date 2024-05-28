@@ -3,7 +3,7 @@ import Home from './components/Home';
 import About from './components/About';
 import WhatsOn from './components/WhatsOn';
 import Location from './components/Location';
-import GetInvolved from './components/GetInvolved';
+import SignUp from './components/SignUp';
 import Footer from './components/Footer';
 import Animation from './Animation.tsx';
 
@@ -14,7 +14,7 @@ function App() {
       <About />
       <WhatsOn />
       <Location />
-      <GetInvolved />
+      <SignUp />
       <Footer />
     </Animation>
   );
