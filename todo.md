@@ -1,6 +1,3 @@
-- fix Klima font not working
 - Finish form — link to airtable
-- best to have the static hero image and just a cta with read the call that will scroll down to the callout text. think thats easiest
-- might want to improve look of text. See CSS for vital signs text for example.
 - edit design and colours using PSD.
 - use iconify for icons.

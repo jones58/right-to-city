@@ -5,7 +5,7 @@ export default function Home() {
       className="relative grid h-screen grid-rows-5 lg:grid-rows-4"
     >
       <div className=" row-span-3 lg:row-span-4 lg:grid lg:grid-cols-5">
-        <div className="relative z-20 mt-20 p-10 pt-20 text-5xl font-bold uppercase text-white lg:col-span-3 lg:p-20 lg:pt-40 lg:text-8xl">
+        <div className="relative z-20 mt-20 p-10 pt-20 text-5xl font-bold uppercase text-white lg:col-span-3 lg:p-20 lg:pt-40 lg:text-7xl">
           <h1>
             Our Right to the City: <br /> Festival of Urban Liberation
           </h1>

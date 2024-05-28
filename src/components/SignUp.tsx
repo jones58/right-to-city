@@ -10,7 +10,7 @@ export default function SignUp() {
         <h1 className="text-3xl font-bold lg:text-4xl">Sign Up</h1>
         <Form />
       </div>
-      <div className=" lg:col-span-2 lg:my-auto">
+      <div className=" lg:col-span-2">
         <img src="/images/city-bg.jpg" className="" />
       </div>
     </div>

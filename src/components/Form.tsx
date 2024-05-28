@@ -6,6 +6,7 @@ export default function GetInvolved() {
     lname: '',
     email: '',
     phone: '',
+    message: '',
   });
 
   const handleChange = e => {
@@ -26,41 +27,44 @@ export default function GetInvolved() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full max-w-xl space-y-6 border bg-white p-8"
+      className="font-body w-full space-y-6 border bg-white p-8 "
     >
-      <div className="flex flex-col justify-between">
-        <label
-          htmlFor="fname"
-          className="mb-5 text-xl font-medium text-neutral-700"
-        >
-          First Name
-        </label>
-        <input
-          type="text"
-          name="fname"
-          value={formData.fname}
-          onChange={handleChange}
-          placeholder="First name"
-          className="border px-4 py-2 "
-          required
-        />
-      </div>
-      <div className="flex flex-col">
-        <label
-          htmlFor="lname"
-          className="mb-5 text-xl font-medium text-neutral-700"
-        >
-          Last Name
-        </label>
-        <input
-          type="text"
-          name="lname"
-          value={formData.lname}
-          onChange={handleChange}
-          placeholder="Last name"
-          className=" border px-4 py-2 "
-          required
-        />
+      <div className="flex flex-col justify-between space-y-6 lg:flex-row lg:space-y-0">
+        {' '}
+        <div className="flex flex-col justify-between">
+          <label
+            htmlFor="fname"
+            className="mb-5 text-xl font-medium text-neutral-700"
+          >
+            First Name
+          </label>
+          <input
+            type="text"
+            name="fname"
+            value={formData.fname}
+            onChange={handleChange}
+            placeholder="First name"
+            className="border px-4 py-2 "
+            required
+          />
+        </div>
+        <div className="flex flex-col">
+          <label
+            htmlFor="lname"
+            className="mb-5 text-xl font-medium text-neutral-700"
+          >
+            Last Name
+          </label>
+          <input
+            type="text"
+            name="lname"
+            value={formData.lname}
+            onChange={handleChange}
+            placeholder="Last name"
+            className=" border px-4 py-2 "
+            required
+          />
+        </div>
       </div>
       <div className="flex flex-col">
         <label
@@ -94,6 +98,21 @@ export default function GetInvolved() {
           placeholder="Phone"
           className=" border px-4 py-2 "
           required
+        />
+      </div>
+      <div className="flex flex-col">
+        <label
+          htmlFor="phone"
+          className="mb-5 text-xl font-medium text-neutral-700"
+        >
+          Message
+        </label>
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Send us a message"
+          className=" border px-4 py-2 "
         />
       </div>
       <div>
