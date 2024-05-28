@@ -11,8 +11,7 @@ export const theme = {
       },
     },
     fontFamily: {
-      title: ['var(--font-greve)', 'sans-serif'],
-      body: ['var(--font-klima)', 'sans-serif'],
+      body: ['klima', 'sans-serif'],
     },
   },
 };
@@ -20,4 +19,13 @@ export const plugins = [
   // eslint-disable-next-line no-undef
   require('@tailwindcss/typography'),
   addDynamicIconSelectors(),
+  function ({ addUtilities }) {
+    const newUtilities = {
+      '.font-greve-wide': {
+        fontFamily: 'greve',
+        fontVariationSettings: "'wght' 600, 'wdth' 1000",
+      },
+    };
+    addUtilities(newUtilities);
+  },
 ];
