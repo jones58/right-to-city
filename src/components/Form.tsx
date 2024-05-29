@@ -1,5 +1,4 @@
-import { useState } from 'react';
-
+import { useState, ChangeEvent, FormEvent } from 'react';
 export default function GetInvolved() {
   const [formData, setFormData] = useState({
     fname: '',
@@ -9,7 +8,9 @@ export default function GetInvolved() {
     message: '',
   });
 
-  const handleChange = e => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -17,7 +18,7 @@ export default function GetInvolved() {
     });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     setFormData({
@@ -33,7 +34,7 @@ export default function GetInvolved() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="font-body max-w-xl space-y-5 bg-white "
+      className="max-w-xl space-y-5 bg-white font-body "
     >
       <div className="flex flex-col justify-between space-y-1 pb-2 lg:grid lg:w-full lg:grid-cols-4 lg:space-y-0 lg:pb-0">
         <div className="flex flex-col lg:col-span-1">
