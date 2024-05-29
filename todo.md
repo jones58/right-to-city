@@ -1,2 +1,2 @@
 - Finish form — link to airtable
-- edit design and colours using PSD. Add triangles and maybe more circles and paper texture maybe.
+- edit design and colours using PSD. maybe add paper texture.
