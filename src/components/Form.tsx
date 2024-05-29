@@ -1,4 +1,5 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
+
 export default function GetInvolved() {
   const [formData, setFormData] = useState({
     fname: '',
@@ -34,102 +35,62 @@ export default function GetInvolved() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-xl space-y-5 bg-white font-body "
+      className="max-w-xl space-y-6 rounded-lg bg-white p-8 shadow-lg font-body"
     >
-      <div className="flex flex-col justify-between space-y-1 pb-2 lg:grid lg:w-full lg:grid-cols-4 lg:space-y-0 lg:pb-0">
-        <div className="flex flex-col lg:col-span-1">
-          <label
-            htmlFor="fname"
-            className="mb-2 text-xl font-medium text-neutral-700 lg:mb-5"
-          >
-            First Name
-          </label>
-          <input
-            type="text"
-            name="fname"
-            value={formData.fname}
-            onChange={handleChange}
-            placeholder="First name"
-            className="border border-2 border-black px-4 py-2 lg:px-2"
-            required
-          />
-        </div>
-        <div className="flex flex-col lg:col-span-2 lg:col-start-3">
-          <label
-            htmlFor="lname"
-            className="mb-2 text-xl font-medium text-neutral-700 lg:mb-5"
-          >
-            Last Name
-          </label>
-          <input
-            type="text"
-            name="lname"
-            value={formData.lname}
-            onChange={handleChange}
-            placeholder="Last name"
-            className=" border border-2 border-black px-4 py-2 lg:px-2 "
-            required
-          />
-        </div>
-      </div>
-      <div className="flex flex-col">
-        <label
-          htmlFor="email"
-          className="mb-2 text-xl font-medium text-neutral-700 lg:mb-5"
-        >
-          Email
-        </label>
+      <h1 className="pb-5 text-4xl lg:text-5xl">Sign Up</h1>
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <input
-          type="email"
-          name="email"
-          value={formData.email}
+          type="text"
+          name="fname"
+          value={formData.fname}
           onChange={handleChange}
-          placeholder="Email"
-          className="border border-2 border-black px-4 py-2 "
+          placeholder="First Name"
+          className="rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+        <input
+          type="text"
+          name="lname"
+          value={formData.lname}
+          onChange={handleChange}
+          placeholder="Last Name"
+          className="rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
       </div>
-      <div className="flex flex-col pb-2 lg:pb-0">
-        <label
-          htmlFor="phone"
-          className="mb-2 text-xl font-medium text-neutral-700 lg:mb-5"
-        >
-          Phone
-        </label>
-        <input
-          type="tel"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          placeholder="Phone"
-          className=" border border-2 border-black px-4 py-2 "
-          required
-        />
-      </div>
-      <div className="flex flex-col">
-        <label
-          htmlFor="phone"
-          className="mb-2 text-xl font-medium text-neutral-700 lg:mb-5"
-        >
-          Message
-        </label>
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          placeholder="Include any relevant notes"
-          className=" border border-2 border-black px-4 py-2 "
-          rows={4}
-          required
-        />
-      </div>
-      <div>
-        <input
-          type="submit"
-          value="Submit"
-          className="w-full  bg-black px-4 py-2 font-medium text-white hover:bg-black hover:opacity-70 focus:outline-none focus:ring-opacity-50"
-        />
-      </div>
+      <input
+        type="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        placeholder="Email"
+        className="w-full rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        required
+      />
+      <input
+        type="tel"
+        name="phone"
+        value={formData.phone}
+        onChange={handleChange}
+        placeholder="Phone"
+        className="w-full rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        required
+      />
+      <textarea
+        name="message"
+        value={formData.message}
+        onChange={handleChange}
+        placeholder="Message"
+        className="w-full resize-none rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        rows={4}
+        required
+      ></textarea>
+      <button
+        type="submit"
+        className="w-full rounded-md bg-blue-500 px-4 py-3 font-medium text-white shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+      >
+        Submit
+      </button>
     </form>
   );
 }
