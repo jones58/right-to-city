@@ -35,7 +35,7 @@ export default function GetInvolved() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-xl space-y-6 rounded-lg bg-white p-8 shadow-lg font-body"
+      className="white max-w-xl space-y-6 rounded-lg bg-white p-8 shadow-lg font-body"
     >
       <h1 className="pb-5 text-4xl lg:text-5xl">Sign Up</h1>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">

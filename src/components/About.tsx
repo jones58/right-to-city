@@ -3,13 +3,13 @@ import React from 'react';
 export default function About() {
   return (
     <div
-      className="min-h-screen p-5 lg:grid lg:grid-cols-5 lg:px-20 lg:pb-20"
+      className="min-h-screen p-5 lg:mb-20 lg:grid lg:grid-cols-5 lg:px-20 lg:pb-20"
       id="about"
     >
       <div className="lg:col-span-3 lg:pr-20">
         <img
           src="/images/city-2.jpg"
-          className="h-full w-full rounded-lg object-cover shadow-lg"
+          className="h-full w-full object-cover"
           alt="City"
         />
       </div>
