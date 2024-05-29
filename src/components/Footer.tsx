@@ -2,7 +2,7 @@ import SocialIcons from './social-icons';
 
 export default function Footer() {
   return (
-    <footer className="flex w-full flex-col justify-between bg-black p-5 text-2xl text-white lg:flex-row lg:px-20">
+    <footer className="bg-black-custom text-white-custom flex w-full flex-col justify-between p-5 text-2xl lg:flex-row lg:px-20">
       <div>
         <p className="py-10 text-2xl font-bold lg:py-0 lg:pb-10 lg:pt-10">
           Our Right to the City: A Festival of Urban Liberation

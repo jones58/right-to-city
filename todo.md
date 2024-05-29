@@ -1,5 +1,4 @@
 - Finish form — link to airtable
-- edit design and colours using PSD. maybe add paper texture.
 
 next message:
 

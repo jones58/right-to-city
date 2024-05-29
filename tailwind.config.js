@@ -6,9 +6,11 @@ export const content = ['./index.html', './src/**/*.{js,ts,jsx,tsx}'];
 export const theme = {
   extend: {
     colors: {
-      background: {
-        default: 'white',
-      },
+      'white-custom': '#f6f5f0',
+      'black-custom': '#333433',
+      'green-custom': '#2b673a',
+      'red-custom': '#e73223',
+      'blue-custom': '#8bacc1',
     },
   },
 };

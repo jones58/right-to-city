@@ -6,6 +6,7 @@ export default function Location() {
     >
       <div className="py-5 lg:col-span-2 lg:py-0 lg:pr-20 lg:text-2xl">
         <h1 className="py-2 text-3xl font-bold lg:py-5 lg:text-5xl">
+          <div className="bg-red-custom mr-2 inline-block h-10 w-10 rounded-full"></div>
           Getting Here
         </h1>
         <p className="prose-xl">

@@ -12,10 +12,11 @@ export default function About() {
         />
       </div>
       <div className="py-5 lg:col-span-2 lg:py-0">
-        <h1 className="text-title py-10 text-3xl font-bold text-gray-800 lg:py-5 lg:text-5xl">
+        <h1 className=" text-black-custom py-10 text-3xl font-bold lg:py-5 lg:text-5xl">
+          <div className="bg-red-custom mr-2 inline-block h-10 w-10 rounded-full"></div>
           About the Festival
         </h1>
-        <p className="prose text-gray-700 lg:prose-xl">
+        <p className="prose lg:prose-xl">
           The Festival of Urban Liberation will be bringing together
           campaigns and communities of resistance from across London.
           <br />

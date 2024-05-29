@@ -35,9 +35,13 @@ export default function GetInvolved() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="white max-w-xl space-y-6 rounded-lg bg-white p-8 shadow-lg font-body"
+      className=" bg-white-custom max-w-xl space-y-6 rounded-lg p-8 shadow-lg font-body"
     >
-      <h1 className="pb-5 text-4xl lg:text-5xl">Sign Up</h1>
+      <h1 className="pb-5 text-3xl lg:text-5xl">
+        {' '}
+        <div className="bg-red-custom mr-2 inline-block h-10 w-10 rounded-full"></div>
+        Sign Up
+      </h1>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <input
           type="text"
@@ -87,7 +91,7 @@ export default function GetInvolved() {
       ></textarea>
       <button
         type="submit"
-        className="w-full rounded-md bg-blue-500 px-4 py-3 font-medium text-white shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+        className="text-white-custom w-full rounded-md bg-blue-500 px-4 py-3 font-medium shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
       >
         Submit
       </button>

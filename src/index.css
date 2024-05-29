@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-background-default;
+  @apply bg-white-custom;
 }
 
 h1,
