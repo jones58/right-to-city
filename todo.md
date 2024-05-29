@@ -1,4 +1,5 @@
 - Back to top arrows like on plan c one
+- make sure colours and other style changes applied universally, like p and h1 elements have to be set manually with text-black-custom.
 - Change photos
 
   - Choose images you like of London then can colour grade it with the blue.
