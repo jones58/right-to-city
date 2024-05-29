@@ -18,6 +18,7 @@
 - This also gave me my first taste of using a variable font on a website (Greve). It was nice to have just one font file to work from, but a little trickier to set up. I used a custom utility in tailwind to get the widest font I could, setting it as .font-greve-wide, which sets the fontFamily to 'greve' and uses fontVariationSettings to adjust the weight and width.
 - I noticed the site wasn't taking up a lot of the available room on mobile, so I changed the padding from 10 to 5.
 - Adjusting the size and spacing of components so that when a page/subpage is opened, it shows most if not all of the content. This allows the user to navigate through the site easily.
+- Upgraded the form using Material Design principles.
 
 ## How to run it:
 
