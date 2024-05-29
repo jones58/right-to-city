@@ -22,6 +22,10 @@ export const plugins = [
         fontFamily: 'greve',
         fontVariationSettings: "'wght' 600, 'wdth' 1000",
       },
+      '.font-greve-wide-bold': {
+        fontFamily: 'greve',
+        fontVariationSettings: "'wght' 800, 'wdth' 1000",
+      },
       '.font-body': {
         fontFamily: 'klima',
       },
