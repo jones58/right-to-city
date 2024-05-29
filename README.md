@@ -20,7 +20,7 @@
 - Adjusting the size and spacing of components so that when a page/subpage is opened, it shows most if not all of the content. This allows the user to navigate through the site easily.
 - Upgraded the form using Material Design principles.
 - Added custom colour scheme to the site with Tailwind, loosely based on the colours used by the graphic designer of marketing materials. I wanted to make them more saturated for web, to give a bold, fresh look.
-- I liked the red circles on the poster the graphic designer made. I thought about ways to incorporate them into my design, settling on adding them next to section titles. I did this using a div inline block: `tsx  <div className="bg-red-custom mr-2 inline-block h-10 w-10 rounded-full"></div> `
+- I liked the red circles on the poster the graphic designer made. I thought about ways to incorporate them into my design, settling on adding them next to section titles. I did this using a div inline block: `tsx  <div className="bg-red-custom mr-2 inline-block h-10 w-10 rounded-full"></div> `. I think this does a good job of tying the sections together and creating a clear hierarchy.
 
 ## How to run it:
 

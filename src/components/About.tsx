@@ -1,19 +1,19 @@
 export default function About() {
   return (
     <div
-      className="min-h-screen p-5 lg:mb-20 lg:grid lg:grid-cols-5 lg:px-20 lg:pb-20"
+      className="min-h-screen p-5 py-10 lg:grid lg:grid-cols-5 lg:p-20 "
       id="about"
     >
       <div className="lg:col-span-3 lg:pr-20">
         <img
           src="/images/city-2.jpg"
-          className="h-full w-full object-cover"
+          className="h-full w-full rounded-lg object-cover shadow-lg"
           alt="City"
         />
       </div>
       <div className="py-5 lg:col-span-2 lg:py-0">
-        <h1 className=" text-black-custom py-10 text-3xl font-bold lg:py-5 lg:text-5xl">
-          <div className="bg-red-custom mr-2 inline-block h-10 w-10 rounded-full"></div>
+        <h1 className=" text-black-custom py-5 text-4xl font-bold lg:text-5xl">
+          <div className="bg-red-custom mr-1 inline-block h-7 w-7 rounded-full lg:mr-2 lg:h-10 lg:w-10"></div>
           About the Festival
         </h1>
         <p className="prose lg:prose-xl">
