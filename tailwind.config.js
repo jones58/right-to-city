@@ -7,7 +7,7 @@ export const theme = {
   extend: {
     colors: {
       background: {
-        default: '#dccead',
+        default: 'white',
       },
     },
   },
