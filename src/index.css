@@ -19,12 +19,12 @@ p {
   font-family: 'greve';
   font-style: normal;
   font-weight: 800;
-  src: url('./fonts/greve-variable.ttf') format('truetype');
+  src: url('../fonts/greve-variable.ttf') format('truetype');
 }
 @font-face {
   font-family: 'klima';
   font-style: normal;
   font-weight: 700;
-  src: url('./fonts/klima/webfonts/klima-regular-web.ttf')
+  src: url('../fonts/klima/webfonts/klima-regular-web.ttf')
     format('truetype');
 }
