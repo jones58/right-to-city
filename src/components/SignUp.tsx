@@ -13,6 +13,7 @@ export default function SignUp() {
         <img
           src="/images/city-3.jpg"
           className="h-full w-full rounded-lg object-cover shadow-lg"
+          alt="The image shows a lively street protest or rally with people dancing, shouting, and holding up signs. The atmosphere is energetic and vibrant, with individuals of various backgrounds engaging passionately in the event. Some of the visible signs include messages like 'Kill the Bill.' The crowd appears to be in a city setting, with buildings in the background and a truck nearby. The participants are expressive, with some raising their fists and others immersed in conversation or dance, reflecting a spirited and dynamic scene."
         />
       </div>
     </div>

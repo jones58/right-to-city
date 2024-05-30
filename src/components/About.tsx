@@ -8,7 +8,7 @@ export default function About() {
         <img
           src="/images/city-2.jpg"
           className="mt-5 h-full w-full rounded-lg object-cover shadow-lg lg:mt-0"
-          alt="City"
+          alt="The image shows a playground in an urban residential area. Several children are playing on a concrete structure that resembles a large, circular platform with a railing on top and a set of geometric, hexagonal steps leading up to it. The background features multi-story apartment buildings with balconies, and there is a painted target on a wall in the distance, possibly part of the playground or a recreational area. The scene is bright and sunny, indicating it is daytime. The children appear to be enjoying their time climbing and exploring the structure."
         />
       </div>
       <div className="py-5 lg:col-span-2 lg:py-0">
