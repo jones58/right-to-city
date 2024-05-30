@@ -11,6 +11,7 @@ h2,
 a {
   @apply font-greve-wide;
 }
+
 p {
   @apply font-body;
 }
