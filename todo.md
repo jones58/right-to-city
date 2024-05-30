@@ -1,8 +1,15 @@
-- Photos change
+## To do list
 
-  - colour grade it with the blue.
-  - alt text for images
+- Photos:
 
-- Finish form — link to airtable
+  - colour grade it with the blue (either photoshop or in tsx)
+  - alt text
 
-- change location when A sends it - everything in location component will need edit, other pages find.
+- Form:
+
+  - link to airtable or other backend
+
+- Waiting on client:
+
+  - change location when A sends it - everything in location component will need edit
+  - change soc media handles
