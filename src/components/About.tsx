@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div
-      className="min-h-screen p-5 py-5 lg:grid lg:grid-cols-5 lg:p-20  "
+      className="min-h-screen bg-white-custom p-5 py-5 lg:grid lg:grid-cols-5 lg:p-20  "
       id="about"
     >
       <div className="lg:col-span-3 lg:pr-20">
