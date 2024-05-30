@@ -1,12 +1,12 @@
 ## To do list
 
-- Photos:
-
-  - alt text
-
 - Form:
 
   - link to airtable or other backend
+
+- Photos:
+
+  - alt text
 
 - Waiting on client:
 
