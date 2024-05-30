@@ -2,7 +2,7 @@ import SocialIcons from './social-icons';
 
 export default function Footer() {
   return (
-    <footer className="flex w-full flex-col justify-between bg-black-custom p-5 py-10 text-2xl text-white-custom lg:flex-row lg:px-20">
+    <footer className="flex w-full flex-col justify-between bg-green-custom p-5 py-10 text-2xl text-white-custom lg:flex-row lg:px-20">
       <div className="flex flex-col space-y-9">
         <a href="#home" className="hover:opacity-70">
           <h1 className="text-3xl font-bold lg:text-4xl">
