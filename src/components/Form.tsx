@@ -35,10 +35,10 @@ export default function GetInvolved() {
   return (
     <form
       onSubmit={handleSubmit}
-      className=" bg-white-custom space-y-6 rounded-lg p-8 shadow-lg font-body"
+      className="space-y-6 rounded-lg bg-white-custom p-8 text-black-custom shadow-lg font-body"
     >
       <h1 className="pb-5 text-4xl lg:text-5xl">
-        <div className="bg-red-custom mr-1 inline-block h-7 w-7 rounded-full lg:mr-2 lg:h-10 lg:w-10"></div>
+        <div className="mr-1 inline-block h-7 w-7 rounded-full bg-red-custom lg:mr-2 lg:h-10 lg:w-10"></div>
         Sign Up
       </h1>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -48,7 +48,7 @@ export default function GetInvolved() {
           value={formData.fname}
           onChange={handleChange}
           placeholder="First Name"
-          className="focus:ring-green-custom rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2"
+          className="rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-custom"
           required
         />
         <input
@@ -57,7 +57,7 @@ export default function GetInvolved() {
           value={formData.lname}
           onChange={handleChange}
           placeholder="Last Name"
-          className="focus:ring-green-custom rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2"
+          className="rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-custom"
           required
         />
       </div>
@@ -67,7 +67,7 @@ export default function GetInvolved() {
         value={formData.email}
         onChange={handleChange}
         placeholder="Email"
-        className="focus:ring-green-custom w-full rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2"
+        className="w-full rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-custom"
         required
       />
       <input
@@ -76,7 +76,7 @@ export default function GetInvolved() {
         value={formData.phone}
         onChange={handleChange}
         placeholder="Phone"
-        className="focus:ring-green-custom w-full rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2"
+        className="w-full rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-custom"
         required
       />
       <textarea
@@ -84,13 +84,13 @@ export default function GetInvolved() {
         value={formData.message}
         onChange={handleChange}
         placeholder="Message"
-        className="focus:ring-green-custom w-full resize-none rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2"
+        className="w-full resize-none rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-custom"
         rows={4}
         required
       ></textarea>
       <button
         type="submit"
-        className="text-white-custom bg-red-custom focus:ring-green-custom hover:bg-green-custom w-full rounded-md px-4 py-3 font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-opacity-50"
+        className="w-full rounded-md bg-red-custom px-4 py-3 font-medium text-white-custom shadow-md hover:bg-green-custom focus:outline-none focus:ring-2 focus:ring-green-custom focus:ring-opacity-50"
       >
         Submit
       </button>

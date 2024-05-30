@@ -14,7 +14,7 @@ export default function EventCard({
   location,
 }: EventCardProps) {
   return (
-    <div className="bg-white-custom flex max-w-md flex-col  justify-between rounded-lg p-5 shadow-lg ">
+    <div className="flex max-w-md flex-col justify-between rounded-lg bg-white-custom p-5 text-black-custom shadow-lg ">
       <img
         className="h-32 w-full object-cover object-center"
         src={imageUrl}
