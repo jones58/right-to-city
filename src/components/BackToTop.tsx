@@ -3,16 +3,14 @@ import React, { useState, useEffect } from 'react';
 const BackToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Function to toggle visibility of the button based on scroll position
   const toggleVisibility = () => {
-    if (scrollY > 50) {
+    if (window.scrollY > 400) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
     }
   };
 
-  // Function to scroll the page to the top
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -20,7 +18,6 @@ const BackToTop: React.FC = () => {
     });
   };
 
-  // Set up event listener for scroll events
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility);
     return () => {
@@ -29,15 +26,27 @@ const BackToTop: React.FC = () => {
   }, []);
 
   return (
-    // Container for the button, fixed at the bottom-left of the viewport
-    <div className="fixed bottom-5 right-5 animate-pulse">
+    <div className="fixed bottom-5 right-5">
       {isVisible && (
-        // Button to scroll back to the top
         <button
           onClick={scrollToTop}
-          className="rounded bg-black p-2 text-white shadow transition-opacity hover:bg-gray-700"
+          className="rounded-full bg-black-custom p-4 text-white-custom shadow-lg hover:bg-green-custom focus:outline-none focus:ring-2 focus:ring-green-custom focus:ring-opacity-50"
         >
-          ↑ Back to Top
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 10l7-7m0 0l7 7m-7-7v18"
+            />
+          </svg>
+          <span className="sr-only">Back to top</span>
         </button>
       )}
     </div>
