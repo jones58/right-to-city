@@ -30,7 +30,7 @@ const BackToTop: React.FC = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="rounded-full bg-black-custom p-4 text-white-custom shadow-lg hover:bg-green-custom focus:outline-none focus:ring-2 focus:ring-green-custom focus:ring-opacity-50"
+          className="rounded-full bg-black-custom p-4 text-white-custom shadow-lg hover:bg-red-custom focus:outline-none focus:ring-2 focus:ring-green-custom focus:ring-opacity-50 active:bg-green-custom"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
