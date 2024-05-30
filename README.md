@@ -21,6 +21,7 @@
 - Upgraded the form using Material Design principles.
 - Added custom colour scheme to the site with Tailwind, loosely based on the colours used by the graphic designer of marketing materials. I wanted to make them more saturated for web, to give a bold, fresh look.
 - I liked the red circles on the poster the graphic designer made. I thought about ways to incorporate them into my design, settling on adding them next to section titles. I did this using a div inline block: `tsx  <div className="bg-red-custom mr-2 inline-block h-10 w-10 rounded-full"></div> `. I think this does a good job of tying the sections together and creating a clear hierarchy.
+- As I was making the backtotop button, I had some issues with how it was displaying(at the bottom of the page and not each viewport). I debugged this and realised the issue was it was wrapped in the animation component.
 
 ## How to run it:
 
