@@ -6,17 +6,21 @@ import Location from './components/Location';
 import SignUp from './components/SignUp';
 import Footer from './components/Footer';
 import Animation from './Animation.tsx';
+import BackToTop from './components/BackToTop';
 
 function App() {
   return (
-    <Animation>
-      <Home />
-      <About />
-      <WhatsOn />
-      <Location />
-      <SignUp />
-      <Footer />
-    </Animation>
+    <div>
+      <Animation>
+        <Home />
+        <About />
+        <WhatsOn />
+        <Location />
+        <SignUp />
+        <Footer />
+      </Animation>
+      <BackToTop />
+    </div>
   );
 }
 
