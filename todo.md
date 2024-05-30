@@ -2,7 +2,6 @@
 
 - Photos:
 
-  - colour grade it with the blue (either photoshop or in tsx)
   - alt text
 
 - Form:
