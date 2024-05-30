@@ -46,20 +46,14 @@ export default function Location() {
           </a>
           can help you find the best cycle routes to get here.
         </p>
-        <h1 className=" pt-4 text-2xl lg:pb-2 lg:pt-5 lg:text-3xl">
+        <h1 className="pt-4 text-2xl lg:pb-2 lg:pt-5 lg:text-3xl">
           By Public Transport
         </h1>
-        <div className="prose pb-5 text-black-custom lg:prose-xl lg:pb-0">
-          <ul>
-            <li>Take the Elizabeth Line train to Abbey Wood.</li>
-            <li>
-              From the station, either walk, or take the 472 or 486 bus
-              towards Thamesmead.
-            </li>
-            <li>Get off the bus at the Lesnes Abbey stop.</li>
-            <li>
-              The entrance to the Lesnes Estate will be on your right.
-            </li>
+        <div className="prose pb-5 text-black-custom font-body lg:prose-xl lg:pb-0">
+          <ul className=" marker:text-black-custom">
+            <li>Elizabeth Line to Abbey Wood.</li>
+            <li>Walk or 472/486 bus to Thamesmead.</li>
+            <li>Get off at Lesnes Abbey.</li>
           </ul>
         </div>
       </div>
