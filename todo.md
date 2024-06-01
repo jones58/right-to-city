@@ -4,11 +4,9 @@
 
   - link to airtable or other backend
 
-- Photos:
-
-  - alt text
+- some more animations maybe
 
 - Waiting on client:
 
   - change location when A sends it - everything in location component will need edit
-  - change soc media handles
+  - change soc media links
