@@ -19,17 +19,42 @@ export default function GetInvolved() {
     });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormData({
-      fname: '',
-      lname: '',
-      email: '',
-      phone: '',
-      message: '',
-    });
-    alert('Form submitted successfully!');
+
+    try {
+      const response = await fetch(
+        'https://api.airtable.com/v0/{baseId}/{tableIdOrName}',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: 'Bearer YOUR_TOKEN',
+          },
+          body: JSON.stringify({
+            records: [
+              {
+                fields: {
+                  fname: formData.fname,
+                  lname: formData.lname,
+                  Email: formData.email,
+                  Phone: formData.phone,
+                  Message: formData.message,
+                },
+              },
+            ],
+          }),
+        },
+      );
+
+      if (response.ok) {
+        alert('Form submitted successfully');
+      } else {
+        console.error('Error submitting form:', response.status);
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
 
   return (

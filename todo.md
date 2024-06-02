@@ -2,9 +2,11 @@
 
 - Form:
 
-  - link to airtable or other backend
+  - link to airtable- fix this.
+    I next wanted to link my form to an Airtable spreadsheet, so I installed airtable.js via npm.
+    (finish typing this up )
 
-- some more animations maybe
+- some more animations maybe?
 
 - Waiting on client:
 
