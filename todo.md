@@ -6,8 +6,6 @@
     I next wanted to link my form to an Airtable spreadsheet, so I installed airtable.js via npm.
     (finish typing this up )
 
-- some more animations maybe?
-
 - Waiting on client:
 
   - change location when A sends it - everything in location component will need edit
