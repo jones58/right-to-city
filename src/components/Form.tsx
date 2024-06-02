@@ -24,12 +24,11 @@ export default function GetInvolved() {
 
     try {
       const response = await fetch(
-        'https://api.airtable.com/v0/{baseId}/{tableIdOrName}',
+        'https://hooks.airtable.com/workflows/v1/genericWebhook/appJR1EiOHZwNV46t/wfld2vNEK5kXX4RXC/wtrBLnC6LLCjWxZD1',
         {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            Authorization: 'Bearer YOUR_TOKEN',
           },
           body: JSON.stringify({
             records: [
@@ -49,6 +48,14 @@ export default function GetInvolved() {
 
       if (response.ok) {
         alert('Form submitted successfully');
+        // Reset the form after successful submission
+        setFormData({
+          fname: '',
+          lname: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
       } else {
         console.error('Error submitting form:', response.status);
       }
