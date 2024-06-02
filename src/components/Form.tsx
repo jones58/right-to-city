@@ -23,7 +23,7 @@ export default function GetInvolved() {
     e.preventDefault();
 
     try {
-      const response = await fetch(
+      const response = await remoteFetchAsync(
         'https://hooks.airtable.com/workflows/v1/genericWebhook/appJR1EiOHZwNV46t/wfld2vNEK5kXX4RXC/wtrBLnC6LLCjWxZD1',
         {
           method: 'POST',
@@ -128,4 +128,14 @@ export default function GetInvolved() {
       </button>
     </form>
   );
+}
+function remoteFetchAsync(
+  arg0: string,
+  arg1: {
+    method: string;
+    headers: { 'Content-Type': string };
+    body: string;
+  },
+) {
+  throw new Error('Function not implemented.');
 }
