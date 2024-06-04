@@ -50,7 +50,7 @@ export default function Location() {
           By Public Transport
         </h1>
         <div className="prose pb-5 text-black-custom font-body lg:prose-xl lg:pb-0">
-          <ul className=" marker:text-black-custom">
+          <ul className="-m-1 marker:text-black-custom lg:-mx-5 lg:-mt-4">
             <li>Elizabeth Line to Abbey Wood.</li>
             <li>Walk or 472/486 bus to Thamesmead.</li>
             <li>Get off at Lesnes Abbey.</li>
