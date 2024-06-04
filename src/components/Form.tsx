@@ -30,6 +30,7 @@ export default function GetInvolved() {
         body: JSON.stringify(formData),
       });
       const result = await response.json();
+      console.log('hello');
 
       if (result.error) {
         alert(result.error);
