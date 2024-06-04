@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 
 export default function GetInvolved() {
   const [formData, setFormData] = useState({
@@ -19,36 +19,22 @@ export default function GetInvolved() {
     });
   };
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     try {
-      const response = await remoteFetchAsync(
-        'https://hooks.airtable.com/workflows/v1/genericWebhook/appJR1EiOHZwNV46t/wfld2vNEK5kXX4RXC/wtrBLnC6LLCjWxZD1',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            records: [
-              {
-                fields: {
-                  fname: formData.fname,
-                  lname: formData.lname,
-                  Email: formData.email,
-                  Phone: formData.phone,
-                  Message: formData.message,
-                },
-              },
-            ],
-          }),
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-      );
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json();
 
-      if (response.ok) {
+      if (result.error) {
+        alert(result.error);
+      } else {
         alert('Form submitted successfully');
-        // Reset the form after successful submission
         setFormData({
           fname: '',
           lname: '',
@@ -56,11 +42,12 @@ export default function GetInvolved() {
           phone: '',
           message: '',
         });
-      } else {
-        console.error('Error submitting form:', response.status);
       }
     } catch (error) {
       console.error('Error submitting form:', error);
+      alert(
+        'An error occurred while submitting the form. Please try again.',
+      );
     }
   };
 
@@ -128,14 +115,4 @@ export default function GetInvolved() {
       </button>
     </form>
   );
-}
-function remoteFetchAsync(
-  arg0: string,
-  arg1: {
-    method: string;
-    headers: { 'Content-Type': string };
-    body: string;
-  },
-) {
-  throw new Error('Function not implemented.');
 }
