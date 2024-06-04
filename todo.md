@@ -2,9 +2,13 @@
 
 - Form:
 
-  - link to airtable- fix this. Use[this guide](https://levelup.gitconnected.com/fetch-data-with-the-airtable-api-and-display-it-in-a-react-app-with-hooks-5f0851b1fe22)
+  - link to airtable- fix this.
+    [used this guide](https://www.youtube.com/watch?app=desktop&v=K1-ANCLd47k)
+    [and this](https://github.com/tiagofsanchez/tiagofsanchez/blob/master/content/posts/2019-10-06-building-a-contact-form-with-airtable.md)
     I next wanted to link my form to an Airtable spreadsheet, so I installed airtable.js via npm.
     (finish typing this up )
+
+- run google lighthouse and check acessibility with extensions
 
 - Waiting on client:
 
