@@ -27,7 +27,8 @@ export default function GetInvolved() {
     });
   };
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = console.log(formData);
+  async (e: FormEvent) => {
     e.preventDefault();
 
     try {
