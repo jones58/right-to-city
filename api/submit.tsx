@@ -43,6 +43,7 @@ export default async function handler(req, res) {
         .json({ error: 'Failed to submit form', details: errorDetails });
       return;
     }
+
     res.status(200).json({ message: 'Form submitted successfully' });
   } catch (error) {
     console.error('Error submitting to Airtable:', error);

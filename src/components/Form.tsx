@@ -1,7 +1,15 @@
-import { useState, ChangeEvent } from 'react';
+import { useState, ChangeEvent, FormEvent } from 'react';
+
+interface FormData {
+  fname: string;
+  lname: string;
+  email: string;
+  phone: string;
+  message: string;
+}
 
 export default function GetInvolved() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     fname: '',
     lname: '',
     email: '',
@@ -19,8 +27,9 @@ export default function GetInvolved() {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
     try {
       const response = await fetch('/api/submit', {
         method: 'POST',
@@ -29,11 +38,14 @@ export default function GetInvolved() {
         },
         body: JSON.stringify(formData),
       });
-      const result = await response.json();
-      console.log('hello');
 
-      if (result.error) {
-        alert(result.error);
+      const result = await response.json();
+
+      if (!response.ok) {
+        alert(
+          result.error ||
+            'An error occurred while submitting the form. Please try again.',
+        );
       } else {
         alert('Form submitted successfully');
         setFormData({
