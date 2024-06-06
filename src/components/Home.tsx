@@ -14,7 +14,7 @@ export default function Home() {
           </h1>
         </div>
       </div>
-      <div className="absolute inset-0 z-0 h-screen bg-[url('/images/city-bg.jpg')] bg-cover bg-center brightness-50">
+      <div className="absolute inset-0 z-0 h-screen bg-[url('/images/city-bg.jpg')] bg-cover bg-center">
         <div className="sr-only">
           The image depicts a large protest or demonstration taking place
           in an urban setting. A dense crowd of people can be seen holding
