@@ -24,12 +24,14 @@
 - As I was making the backtotop button, I had some issues with how it was displaying(at the bottom of the page and not each viewport). I debugged this and realised the issue was it was wrapped in the animation component.
 - Added validation on the phone number and email adress on the form component. I used regex to validate these, within functions that run on submit.
 - I next wanted to link my form to an Airtable spreadsheet
+
   - I used [this guide](https://www.youtube.com/watch?app=desktop&v=K1-ANCLd47k) and [this one](https://github.com/tiagofsanchez/tiagofsanchez/blob/master/content/posts/2019-10-06-building-a-contact-form-with-airtable.md) to try and work it out, but to no avail.
   - I then read about using Postman to test APIs and realised the JSON I was submitting wasn't as requested by the Airtable API.
   - I found the correct JSON by testing some dummy data in Postman:
     {"fields": {"fname": "John", "lname": "Doe", "email": "john.doe@example.com", "phone": "123-456-7890", "message": "I am interested in getting involved." } }
-  - I then set about getting my form to return the data in this format.
-  - When I was still having trouble, I realised that I was using a NextJS API route method within React. I didn't want to move my project to React, so I looked up how to integrate APIs in React with Axios. This proved far simpler then setting up an API route.
+  - I then set about getting my form to return the data in this format.I console.logged out the json object I was posting with the form until I got what I was looking it.
+  - When I having trouble submitting the form to the API, I realised that I was using a NextJS API route method within React. I didn't want to move my project to React, so I looked up how to integrate APIs in React with Axios. I wrapped the API call in a try catch block within the form component's handleSubmit function. This proved far simpler then setting up an API route.
+  - I next had some issues using process.env., since this is a client side project. I solved this by looking through the [Vite docs](https://vitejs.dev/guide/env-and-mode), and finding that I needed to use `import.meta.env` to get the environment variables from the .env file, as well as prefacing variable names with `VITE_`.
 
 ## How to run it:
 
