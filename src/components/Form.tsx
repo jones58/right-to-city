@@ -77,7 +77,7 @@ export default function GetInvolved() {
         },
         {
           headers: {
-            Authorization: `Bearer ${process.env.REACT_APP_TOKEN}`,
+            Authorization: `Bearer ${import.meta.env.VITE_APP_TOKEN}`,
             'Content-Type': 'application/json',
           },
         },
