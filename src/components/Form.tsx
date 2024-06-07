@@ -17,6 +17,16 @@ export default function GetInvolved() {
     message: '',
   });
 
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const validatePhone = (phone: string) => {
+    const phoneRegex = /^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/;
+    return phoneRegex.test(phone);
+  };
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
@@ -27,9 +37,38 @@ export default function GetInvolved() {
     });
   };
 
-  const handleSubmit = console.log(formData);
-  async (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
+    let hasErrors = false;
+    const errorMessages: { [key: string]: string } = {};
+
+    if (!validateEmail(formData.email)) {
+      errorMessages.email = 'Please enter a valid email address.';
+      hasErrors = true;
+    }
+
+    if (!validatePhone(formData.phone)) {
+      errorMessages.phone = 'Please enter a valid phone number.';
+      hasErrors = true;
+    }
+
+    if (hasErrors) {
+      alert(Object.values(errorMessages).join(' '));
+      return;
+    }
+
+    const submissionData = {
+      fields: {
+        fname: formData.fname,
+        lname: formData.lname,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      },
+    };
+
+    console.log(submissionData);
 
     try {
       const response = await fetch('/api/submit', {
@@ -37,7 +76,7 @@ export default function GetInvolved() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(submissionData),
       });
 
       const result = await response.json();
