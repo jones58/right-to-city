@@ -58,35 +58,32 @@ export default function GetInvolved() {
       return;
     }
 
-    const submissionData = {
-      fields: {
-        fname: formData.fname,
-        lname: formData.lname,
-        email: formData.email,
-        phone: formData.phone,
-        message: formData.message,
-      },
-    };
-
-    console.log(submissionData);
-
     try {
-      const response = await fetch('/api/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+      const response = await fetch(
+        'https://api.airtable.com/v0/appJR1EiOHZwNV46t/tbl1lqA0QKonu7b8d',
+        {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${process.env.TOKEN}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            records: [
+              {
+                fields: {
+                  fname: formData.fname,
+                  lname: formData.lname,
+                  email: formData.email,
+                  phone: formData.phone,
+                  message: formData.message,
+                },
+              },
+            ],
+          }),
         },
-        body: JSON.stringify(submissionData),
-      });
+      );
 
-      const result = await response.json();
-
-      if (!response.ok) {
-        alert(
-          result.error ||
-            'An error occurred while submitting the form. Please try again.',
-        );
-      } else {
+      if (response.ok) {
         alert('Form submitted successfully');
         setFormData({
           fname: '',
@@ -95,6 +92,12 @@ export default function GetInvolved() {
           phone: '',
           message: '',
         });
+      } else {
+        const errorDetails = await response.json();
+        alert(
+          errorDetails.error ||
+            'An error occurred while submitting the form. Please try again.',
+        );
       }
     } catch (error) {
       console.error('Error submitting form:', error);
