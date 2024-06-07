@@ -23,7 +23,7 @@ export default function Location() {
           indoor rooms with beds for families or those who aren't able to
           camp. This includes some accessible rooms.
         </p>
-        <h1 className=" pt-4 text-2xl lg:pb-2 lg:pt-5 lg:text-3xl">
+        <h1 className="pb-2 pt-4 text-2xl text-2xl lg:pt-5 lg:text-3xl">
           By Bike
         </h1>
         <p className="prose text-black-custom lg:prose-xl">
@@ -46,11 +46,11 @@ export default function Location() {
           </a>
           can help you find the best cycle routes to get here.
         </p>
-        <h1 className="pt-4 text-2xl lg:pb-2 lg:pt-5 lg:text-3xl">
+        <h1 className="pb-2 pt-4 text-2xl text-2xl lg:pt-5 lg:text-3xl">
           By Public Transport
         </h1>
         <div className="prose pb-5 text-black-custom font-body lg:prose-xl lg:pb-0">
-          <ul className="-m-1 marker:text-black-custom lg:-mx-5 lg:-mt-4">
+          <ul className="-m-1 marker:text-black-custom lg:-mx-5 lg:-mt-3">
             <li>Elizabeth Line to Abbey Wood.</li>
             <li>Walk or 472/486 bus to Thamesmead.</li>
             <li>Get off at Lesnes Abbey.</li>
