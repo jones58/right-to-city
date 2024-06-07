@@ -1,4 +1,5 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
+import axios from 'axios';
 
 interface FormData {
   fname: string;
@@ -59,31 +60,30 @@ export default function GetInvolved() {
     }
 
     try {
-      const response = await fetch(
+      const response = await axios.post(
         'https://api.airtable.com/v0/appJR1EiOHZwNV46t/tbl1lqA0QKonu7b8d',
         {
-          method: 'POST',
+          records: [
+            {
+              fields: {
+                fname: formData.fname,
+                lname: formData.lname,
+                email: formData.email,
+                phone: formData.phone,
+                message: formData.message,
+              },
+            },
+          ],
+        },
+        {
           headers: {
-            Authorization: `Bearer ${process.env.TOKEN}`,
+            Authorization: `Bearer ${process.env.REACT_APP_TOKEN}`,
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({
-            records: [
-              {
-                fields: {
-                  fname: formData.fname,
-                  lname: formData.lname,
-                  email: formData.email,
-                  phone: formData.phone,
-                  message: formData.message,
-                },
-              },
-            ],
-          }),
         },
       );
 
-      if (response.ok) {
+      if (response.status === 200) {
         alert('Form submitted successfully');
         setFormData({
           fname: '',
@@ -92,12 +92,6 @@ export default function GetInvolved() {
           phone: '',
           message: '',
         });
-      } else {
-        const errorDetails = await response.json();
-        alert(
-          errorDetails.error ||
-            'An error occurred while submitting the form. Please try again.',
-        );
       }
     } catch (error) {
       console.error('Error submitting form:', error);

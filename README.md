@@ -29,7 +29,7 @@
   - I found the correct JSON by testing some dummy data in Postman:
     {"fields": {"fname": "John", "lname": "Doe", "email": "john.doe@example.com", "phone": "123-456-7890", "message": "I am interested in getting involved." } }
   - I then set about getting my form to return the data in this format.
-  - When I was still having trouble, I realised that I was using a NextJS API route method within React. I didn't want to move my project to React, so I looked up how to integrate APIs in React with Axios. In researching Axios, I realised I didn't need Axios and could just use fetch instead. This all proved far simpler then setting up an API route.
+  - When I was still having trouble, I realised that I was using a NextJS API route method within React. I didn't want to move my project to React, so I looked up how to integrate APIs in React with Axios. This proved far simpler then setting up an API route.
 
 ## How to run it:
 
