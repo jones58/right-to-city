@@ -1,5 +1,6 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 interface FormData {
   fname: string;
@@ -55,7 +56,11 @@ export default function GetInvolved() {
     }
 
     if (hasErrors) {
-      alert(Object.values(errorMessages).join(' '));
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: Object.values(errorMessages).join(' '),
+      });
       return;
     }
 
@@ -84,7 +89,11 @@ export default function GetInvolved() {
       );
 
       if (response.status === 200) {
-        alert('Form submitted successfully');
+        Swal.fire({
+          icon: 'success',
+          title: 'Success!',
+          text: 'Form submitted successfully. See you at the festival.',
+        });
         setFormData({
           fname: '',
           lname: '',
@@ -95,9 +104,11 @@ export default function GetInvolved() {
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      alert(
-        'An error occurred while submitting the form. Please try again.',
-      );
+      Swal.fire({
+        icon: 'error',
+        title: 'Submission Failed',
+        text: 'An error occurred while submitting the form. Please try again.',
+      });
     }
   };
 

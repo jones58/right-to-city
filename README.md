@@ -40,6 +40,8 @@
 
 - Used the WCAG Contrast checker extension to check the contrast of colours on the site. The only issues were with the embedded Google map, for which there is a "view larger map" option for those who need it.
 
+- I wasn't happy with using alerts for popups on submit, so I looked into other options. Rather than creating a new component, I opted to use the [SweetAlert2](https://sweetalert2.github.io/) library.
+
 ## How to run it:
 
 - npm install
