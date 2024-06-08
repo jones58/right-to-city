@@ -25,7 +25,7 @@ export default function Location() {
           camp. This includes some accessible rooms.
         </p>
         <h1 className="pb-2 pt-4 text-2xl text-2xl lg:pt-5 lg:text-3xl">
-          By Bike
+          🚲 By Bike
         </h1>
         <p className="prose text-black-custom lg:prose-xl">
           <a
@@ -48,7 +48,7 @@ export default function Location() {
           can help you find the best cycle routes to get here.
         </p>
         <h1 className="pb-2 pt-4 text-2xl text-2xl lg:pt-5 lg:text-3xl">
-          By Public Transport
+          🚇 By Public Transport
         </h1>
         <div className="prose pb-5 text-black-custom font-body lg:prose-xl lg:pb-0">
           <ul className="-m-1 marker:text-black-custom lg:-mx-5 lg:-mt-3">
