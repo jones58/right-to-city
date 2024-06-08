@@ -91,8 +91,8 @@ export default function GetInvolved() {
       if (response.status === 200) {
         Swal.fire({
           icon: 'success',
-          title: 'Success!',
-          text: 'Form submitted successfully. See you at the festival.',
+          title: 'Success',
+          text: 'Thanks for signing up. See you at the festival!',
         });
         setFormData({
           fname: '',
