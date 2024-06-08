@@ -33,6 +33,10 @@
   - When I having trouble submitting the form to the API, I realised that I was using a NextJS API route method within React. I didn't want to move my project to React, so I looked up how to integrate APIs in React with Axios. I wrapped the API call in a try catch block within the form component's handleSubmit function. This proved far simpler then setting up an API route.
   - I next had some issues using process.env., since this is a client side project. I solved this by looking through the [Vite docs](https://vitejs.dev/guide/env-and-mode), and finding that I needed to use `import.meta.env` to get the environment variables from the .env file, as well as prefacing variable names with `VITE_`.
 
+- Used Google Lighthouse to check and improve accessibility:
+  - Starting on a score of 96, I improved this by adding titles for the map iframe within the location component. I added `aria-title="map showing the location of the festival"` to the iframe.
+  - Improved SEO by adding a meta description to the site.
+
 ## How to run it:
 
 - npm install

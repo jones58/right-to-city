@@ -10,6 +10,7 @@ export default function Location() {
         aria-hidden="false"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        aria-title="map showing the location of the festival"
       />
 
       <div className="text-black-custom lg:col-span-2  lg:text-2xl">
