@@ -34,8 +34,11 @@
   - I next had some issues using process.env., since this is a client side project. I solved this by looking through the [Vite docs](https://vitejs.dev/guide/env-and-mode), and finding that I needed to use `import.meta.env` to get the environment variables from the .env file, as well as prefacing variable names with `VITE_`.
 
 - Used Google Lighthouse to check and improve accessibility:
+
   - Starting on a score of 96, I improved this by adding titles for the map iframe within the location component. I added `aria-title="map showing the location of the festival"` to the iframe.
   - Improved SEO by adding a meta description to the site.
+
+- Used the WCAG Contrast checker extension to check the contrast of colours on the site. The only issues were with the embedded Google map, for which there is a "view larger map" option for those who need it.
 
 ## How to run it:
 
